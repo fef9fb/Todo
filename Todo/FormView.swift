@@ -11,6 +11,7 @@ import SwiftUI
 struct FormView: View {
     @State var title = ""
     @Environment(\.managedObjectContext) var viewContext
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
@@ -21,6 +22,7 @@ struct FormView: View {
                 Section {
                     Button(action: {
                         self.save()
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("登録")
                     }
