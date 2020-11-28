@@ -13,8 +13,9 @@
 		5B17F59F2556830A003664A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B17F59E2556830A003664A7 /* Assets.xcassets */; };
 		5B17F5A22556830A003664A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B17F5A12556830A003664A7 /* Preview Assets.xcassets */; };
 		5B17F5A52556830A003664A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B17F5A32556830A003664A7 /* LaunchScreen.storyboard */; };
-		5B17F5AE255A7CA3003664A7 /* ToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B17F5AC255A7CA3003664A7 /* ToDo.xcdatamodeld */; };
 		5B17F5B0255A927B003664A7 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17F5AF255A927B003664A7 /* FormView.swift */; };
+		5B17F5B22563B27A003664A7 /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17F5B12563B27A003664A7 /* Todos.swift */; };
+		5B9297F02571F6F900FE7F72 /* Todos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B9297EE2571F6F900FE7F72 /* Todos.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		5B17F5A12556830A003664A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B17F5A42556830A003664A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B17F5A62556830A003664A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B17F5AD255A7CA3003664A7 /* ToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDo.xcdatamodel; sourceTree = "<group>"; };
 		5B17F5AF255A927B003664A7 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		5B17F5B12563B27A003664A7 /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
+		5B9297EF2571F6F900FE7F72 /* Todos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todos.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +46,7 @@
 		5B17F58C255682FF003664A7 = {
 			isa = PBXGroup;
 			children = (
-				5B17F5AC255A7CA3003664A7 /* ToDo.xcdatamodeld */,
+				5B9297EE2571F6F900FE7F72 /* Todos.xcdatamodeld */,
 				5B17F597255682FF003664A7 /* Todo */,
 				5B17F596255682FF003664A7 /* Products */,
 			);
@@ -69,6 +71,7 @@
 				5B17F5A32556830A003664A7 /* LaunchScreen.storyboard */,
 				5B17F5A62556830A003664A7 /* Info.plist */,
 				5B17F5A02556830A003664A7 /* Preview Content */,
+				5B17F5B12563B27A003664A7 /* Todos.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -155,8 +158,9 @@
 				5B17F59925568300003664A7 /* AppDelegate.swift in Sources */,
 				5B17F59B25568300003664A7 /* SceneDelegate.swift in Sources */,
 				5B17F5B0255A927B003664A7 /* FormView.swift in Sources */,
+				5B9297F02571F6F900FE7F72 /* Todos.xcdatamodeld in Sources */,
+				5B17F5B22563B27A003664A7 /* Todos.swift in Sources */,
 				5B17F59D25568300003664A7 /* ContentView.swift in Sources */,
-				5B17F5AE255A7CA3003664A7 /* ToDo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,13 +354,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5B17F5AC255A7CA3003664A7 /* ToDo.xcdatamodeld */ = {
+		5B9297EE2571F6F900FE7F72 /* Todos.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5B17F5AD255A7CA3003664A7 /* ToDo.xcdatamodel */,
+				5B9297EF2571F6F900FE7F72 /* Todos.xcdatamodel */,
 			);
-			currentVersion = 5B17F5AD255A7CA3003664A7 /* ToDo.xcdatamodel */;
-			path = ToDo.xcdatamodeld;
+			currentVersion = 5B9297EF2571F6F900FE7F72 /* Todos.xcdatamodel */;
+			path = Todos.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

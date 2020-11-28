@@ -9,14 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var message = "Navi"
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Todos.title, ascending: true)],
+        animation: .default)
+    var todos: FetchedResults<Todos>
+    
+    @Environment(\.managedObjectContext) var viewContext
     
     var body: some View {
         NavigationView {
 
             List{
-                ForEach(3..<7) { i in
-                    Text("リスト \(i)")
+                ForEach(todos, id: \.self) { todo in
+                    Text("\(todo.title!)")
+                }.onDelete { indices in
+                    self.todos.delete(at: indices, from: self.viewContext)
                 }
             }
             .navigationBarTitle("Todo List", displayMode: .inline)
