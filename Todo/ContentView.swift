@@ -31,14 +31,19 @@ struct ContentView: View {
                 trailing:
                 Button(action: {}) {
                     NavigationLink(destination: FormView()) {
-                        Text("＋")
+                        Text("＋").foregroundColor(Color.white)
                     }
                 }
             )
         }
-        
+    }
     
-        
+    init() {
+      let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor.systemBlue
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.lightText]
+        UINavigationBar.appearance().standardAppearance = appearance
     }
 }
 
